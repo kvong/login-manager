@@ -21,6 +21,9 @@ If your are not already using lightdm, install `lightdm` and `lightdm-webkit2-gr
 #### Debian (Ubuntu)
 `# apt-get install lightdm lightdm-webkit2-greeter`
 
+Install from source: 
+![Guide](https://software.opensuse.org/download.html?project=home:antergos&package=lightdm-webkit2-greeter)
+
 Now edit the lightdm config, in `/etc/lightdm/lightdm.conf` and set it to use the webkit2 greeter instead.
 ```
 [Seat:*]
