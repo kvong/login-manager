@@ -1,6 +1,3 @@
-# DEPRECATED
-This project will no longer be supported as the dependencies have been abandoned.
-
 # LoginManager.js
 
 ## About
@@ -22,16 +19,15 @@ If your are not already using lightdm, install `lightdm` and `lightdm-webkit2-gr
 `# apt-get install lightdm lightdm-webkit2-greeter`
 
 Install from source: 
-![Guide](https://software.opensuse.org/download.html?project=home:antergos&package=lightdm-webkit2-greeter)
+[Guide](https://software.opensuse.org/download.html?project=home:antergos&package=lightdm-webkit2-greeter)
 
-Now edit the lightdm config, in `/etc/lightdm/lightdm.conf` and set it to use the webkit2 greeter instead.
+Now edit the lightdm config, in `/etc/lightdm/lightdm.conf` and set it to use the webkit2 greeter instead. In doesn't exist create it and add the following:
 ```
 [Seat:*]
 ...
 greeter-session=lightdm-webkit2-greeter
 ...
 ```
-
 
 Next clone the this repo and copy it to the webkit2 themes folder. (You will need
 root permission for the copy)
